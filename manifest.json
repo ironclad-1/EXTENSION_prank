@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Add-Block",
+    "version": "1.0.0",
+    "description":"This is a specialized add blocker made for you, just in case your parents walk in when you are watching the deed",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["Content.js"]
+      }
+      
+    ]
+  }
