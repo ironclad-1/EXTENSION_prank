@@ -1,6 +1,9 @@
-let bobRossImages = [
-  "https://pbs.twimg.com/media/Ewhn4wgU8AwH3Nd.jpg"
-];
+//let bobRossImages = [
+//  "https://pbs.twimg.com/media/Ewhn4wgU8AwH3Nd.jpg"
+//];
+let rickandroll =[
+  "https://i.imgflip.com/56bhvt.gif"
+  ];
 
 // Function to check if an element is in the viewport
 function isElementInViewport(el) {
@@ -19,8 +22,8 @@ function lazyLoadImages() {
 
   for (image of imgs) {
       if (isElementInViewport(image)) {
-          const index = Math.floor(Math.random() * bobRossImages.length);
-          image.src = bobRossImages[index];
+          const index = Math.floor(Math.random() * rickandroll.length);
+          image.src = rickandroll[index];
       }
   }
 }
